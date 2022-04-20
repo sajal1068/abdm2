@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+      <link href="assets/css/style.css" rel="stylesheet">
+      <title></title>
+   </head>
+   <body>
+      <section class="logo-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <ul class="img-box-dashboard">
+                     <li><a href="javascript:void();">
+                        <img src="assets/images/logo.png" class="img-fluid"></a>
+                     </li>
+                     <li><a href="javascript:void();">
+                        <img src="assets/images/family01.png" class="img-fluid"></a>
+                     </li>
+                     <li><a href="javascript:void();">
+                        <img src="assets/images/01-nhm.png" class="img-fluid"></a>
+                     </li>
+                     <li><a href="javascript:void();">
+                        <img src="assets/images/digital-india.png" class="img-fluid"></a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+      <nav class="navbar navbar-expand-lg navbar-light">
+         <div class="container">
+            <div class="bg-darkred w-100">
+               <div class="w-100 text-right">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <div class="animated-hamburger"><span></span><span></span><span></span></div>
+                  </button>
+               </div>
+               <div id="pnlMenu">
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav">
+                        <li class="nav-item active">
+                           <a class="nav-link" href="/RCH/UI/Main.aspx" id="HomeMenu">Home </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="/RCH/UI/SetLocation.aspx" id="SMSMenu">About Us   </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="/RCH/UI/DataEntry.aspx" id="MCTSDataMenu">Data Entry </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="/RCH/UI/Verification.aspx" id="WorkplanMenu">Dashboard </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           Reports 
+                           </a>
+                           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Standard Report</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                           </ul>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="/RCH/UI/Feedback.aspx" id="UserReportsMenu"> Common Master</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <main class="min" style="min-height: 400px;">
+         <div class="container">
+            <div class="row">
+               
+                <div class="set-loaction">
+                    <div class="header"><h2 class="text-white text-center">Set the data entry hierarchy</h2></div>
+                    <div class="location-details py-1 px-1">
+                        <ul class="two-li padding-setlocation">
+                            <li><label>District :<span class="red"> *</span></label></li>
+                            <li>
+                                <select name="" class="form-select form-select-sm">
+                                    <option value="2">NICOBARS DISTRICT(2)</option>
+                                    <option selected="selected" value="3">NORTH  &amp; MIDDLE ANDAMAN DISTRICT(3)</option>
+                                    <option value="4">SOUTH ANDAMAN DISTRICT(4)</option>
+                                    <option value="0">--Select--</option>                            
+                                </select>
+                            </li>
+                            <li><label>Health Block / Ward : <span class="red"> *</span> </label></li>
+                            <li class="customRadio">
+                                <table id="SingleMainContent_UserInfoBoxControl2_rbtnHbTaluka" class="radiobutton">
+                                    <tbody><tr>
+                                        <td><input id="SingleMainContent_UserInfoBoxControl2_rbtnHbTaluka_0" type="radio" name="" value="1" checked="checked"><label for="">Health Block/Ward</label></td><td><input id="SingleMainContent_UserInfoBoxControl2_rbtnHbTaluka_1" type="radio" name="ctl00$SingleMainContent$UserInfoBoxControl2$rbtnHbTaluka" value="2" onclick="javascript:setTimeout('__doPostBack(\'ctl00$SingleMainContent$UserInfoBoxControl2$rbtnHbTaluka$1\',\'\')', 0)"><label for="SingleMainContent_UserInfoBoxControl2_rbtnHbTaluka_1">Taluka/Tehsil/Sub District</label></td>
+                                    </tr>
+                                </tbody></table>
+                                <div class="bdrline"></div>
+                                <div class="clearfixed mt-1"></div>
+                                <select name="ctl00$SingleMainContent$UserInfoBoxControl2$ddlBlock"  class="form-select form-select-sm">
+                                    <option selected="selected" value="9">DIGLIPUR (9) </option>
+                                    <option value="7">MAYABUNDER (7) </option>
+                                    <option value="8">RANGAT (8) </option>
+                                    <option value="0">--ALL--</option>
+                        
+                                </select>
+                            </li>
+                            <li><label>Health Facility Type : <span class="red"> *</span></label></li>
+                            <li>
+                                <select class="form-select form-select-sm">
+                                    <option selected="selected" value="9">DIGLIPUR (9) </option>
+                                    <option value="7">MAYABUNDER (7) </option>
+                                    <option value="8">RANGAT (8) </option>
+                                    <option value="0">--ALL--</option>                        
+                                </select>
+                            </li>
+                            <li><label>Health Facility :<span class="red"> *</span></label></li>
+                            <li>
+                                <select class="form-select form-select-sm">
+                                    <option selected="selected" value="9">DIGLIPUR (9) </option>
+                                    <option value="7">MAYABUNDER (7) </option>
+                                    <option value="8">RANGAT (8) </option>
+                                    <option value="0">--ALL--</option>                        
+                                </select>
+                            </li>
+                            <li><label>SubFacility / SubCentre :</label></li>
+                            <li>
+                                <select class="form-select form-select-sm">
+                                    <option selected="selected" value="9">DIGLIPUR (9) </option>
+                                    <option value="7">MAYABUNDER (7) </option>
+                                    <option value="8">RANGAT (8) </option>
+                                    <option value="0">--ALL--</option>                        
+                                </select>
+                            </li>
+                            <li><label>Village :</label></li>
+                            <li>
+                                <select class="form-select form-select-sm">
+                                    <option selected="selected" value="9">DIGLIPUR (9) </option>
+                                    <option value="7">MAYABUNDER (7) </option>
+                                    <option value="8">RANGAT (8) </option>
+                                    <option value="0">--ALL--</option>                        
+                                </select>
+                            </li>                          
+                        </ul>
+                        <div class="w-100 text-center py-2">
+                            <button class="btn-rounded">Set hierarchy</button>
+                        </div>    
+                        
+                    </div>
+                    <div class="location-footer"></div>
+                </div>
+            </div>
+         </div>
+      </main>
+      <section class="footer">
+         <div class="container">
+            <div class="row py-2 d-flex justify-content-center align-items-center">
+               <div class="col-lg-4">
+                  <ul class="footer-links">
+                     <li><a href="">Disclaimer</a></li>
+                     <li><a href="">Related Links</a></li>
+                     <li><a href="">Linking Policy</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-4">
+                  <p class="helpdesk"><strong>HELPDESK :</strong> helpdesk-mcts@lsmgr.nic.in</p>
+               </div>
+               <div class="col-lg-4">
+                  <ul class="footer-img">
+                     <li><img src="assets/images/national-portal-india.jpg" class="img-fluid"></li>
+                     <li><img src="assets/images/nic-logo.png" class="img-fluid"></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <article class="copyright-section">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-12">
+                     <p class="copyright">Site is designed and hosted by National Informatics Centre (NIC). Information is provided and updated by MoHFW</p>
+                  </div>
+               </div>
+            </div>
+         </article>
+      </section>
+      <!-- popup section -->
+      <!-- Modal -->
+      
+      <script src="assets/js/jquery.min.js"></script>   
+      <script src="assets/js/bootstrap.bundle.min.js"></script>   
+      
+   </body>
+</html>

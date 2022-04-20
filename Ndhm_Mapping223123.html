@@ -1,0 +1,778 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+      <link href="assets/css/style.css" rel="stylesheet">
+      <title></title>
+      <style>
+      
+.navbar-nav{
+    flex: 1;
+    justify-content: space-between;
+}
+ .nav-item {
+    flex: 1 1 100%;
+    min-width: 0.1px;
+}
+.nav-link {
+    font-style: normal;    
+    font-size: 20px;
+    color: white;    
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+      </style>
+   </head>
+   <body>
+      <section class="logo-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <ul class="img-box-dashboard">
+                     <li><a href="javascript:void();">
+                        <img src="assets/images/logo.png" class="img-fluid"></a>
+                     </li>
+                     <li><a href="javascript:void();">
+                        <img src="assets/images/family01.png" class="img-fluid"></a>
+                     </li>
+                     <li><a href="javascript:void();">
+                        <img src="assets/images/01-nhm.png" class="img-fluid"></a>
+                     </li>
+                     <li><a href="javascript:void();">
+                        <img src="assets/images/digital-india.png" class="img-fluid"></a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+      <nav class="navbar navbar-expand-lg navbar-light">
+         <div class="container">
+            <div class="bg-darkred w-100">
+               <div class="w-100 text-right">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <div class="animated-hamburger"><span></span><span></span><span></span></div>
+                  </button>
+               </div>
+               <div id="pnlMenu">
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav">
+                        <li class="nav-item active">
+                           <a class="nav-link" href="javascript:void();" id="HomeMenu">Home </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="javascript:void();" id="SMSMenu">Set Location</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="javascript:void();" id="MCTSDataMenu">Data Entry </a>
+                        </li>
+                        <!-- <li class="nav-item">
+                           <a class="nav-link" href="/RCH/UI/Verification.aspx" id="WorkplanMenu">Dashboard </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           Reports 
+                           </a>
+                           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Standard Report</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                           </ul>
+                        </li> -->
+                        <li class="nav-item">
+                           <a class="nav-link" href="javascript:void();" id="UserReportsMenu"> Feedback</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <main class="min" style="min-height: 400px;">
+         <div class="container">
+
+
+
+            <div class="row">
+               <div class="col-sm-12">
+
+                  <fieldset class="the-fieldset">
+                     <legend class="the-legend">Select Hierarchy</legend>
+
+                     <div class="new_nationsearch_radio mb-3 radio text-center">
+                   
+                        <table id="SingleMainContent_rbtn_hierarchy_national_search" class="customRadio w-100 " style="font-weight:bold;">
+       <tbody><tr>
+          <td><input id="SingleMainContent_rbtn_hierarchy_national_search_0" type="radio" name="ctl00$SingleMainContent$rbtn_hierarchy_national_search" value="1" checked="checked"><label for="SingleMainContent_rbtn_hierarchy_national_search_0">Search by Hierarchy</label></td><td><input id="SingleMainContent_rbtn_hierarchy_national_search_1" type="radio" name="ctl00$SingleMainContent$rbtn_hierarchy_national_search" value="2" onclick="javascript:setTimeout('__doPostBack(\'ctl00$SingleMainContent$rbtn_hierarchy_national_search$1\',\'\')', 0)"><label for="SingleMainContent_rbtn_hierarchy_national_search_1">Search Outside Hierarchy</label></td><td><input id="SingleMainContent_rbtn_hierarchy_national_search_2" type="radio" name="ctl00$SingleMainContent$rbtn_hierarchy_national_search" value="3" onclick="javascript:setTimeout('__doPostBack(\'ctl00$SingleMainContent$rbtn_hierarchy_national_search$2\',\'\')', 0)"><label for="SingleMainContent_rbtn_hierarchy_national_search_2">National Search</label></td>
+       </tr>
+    </tbody></table>
+               
+                        </div>
+<div class="clearfix"></div>
+                     <ul class="six-row d-flex">
+                        <li>
+                           <label>State</label>
+                           <select class="form-select form-select-sm">
+                              <option >DIGLIPUR  </option>
+                              <option >MAYABUNDER  </option>
+                              <option >RANGAT  </option>
+                              <option >--ALL--</option>                        
+                           </select>
+                        </li>
+                        <li>
+                           <label>District</label>
+                           <select class="form-select form-select-sm">
+                              <option >DIGLIPUR  </option>
+                              <option >MAYABUNDER  </option>
+                              <option >RANGAT  </option>
+                              <option >--ALL--</option>                        
+                           </select>
+                        </li>
+                        <li>
+                           <label>Health Block</label>
+                           <select class="form-select form-select-sm">
+                              <option >DIGLIPUR  </option>
+                              <option >MAYABUNDER  </option>
+                              <option >RANGAT  </option>
+                              <option >--ALL--</option>                        
+                           </select>
+                        </li>
+                        <li>
+                           <label>PHC / Health Facility</label>
+                           <select class="form-select form-select-sm">
+                              <option >DIGLIPUR  </option>
+                              <option >MAYABUNDER  </option>
+                              <option >RANGAT  </option>
+                              <option >--ALL--</option>                        
+                           </select>
+                        </li>
+                        <li>
+                           <label>SubCentre / SubFacility</label>
+                           <select class="form-select form-select-sm">
+                              <option >DIGLIPUR  </option>
+                              <option >MAYABUNDER  </option>
+                              <option >RANGAT  </option>
+                              <option >--ALL--</option>                        
+                           </select>
+                        </li>
+                        <li>
+                           <label>Village</label>
+                           <select class="form-select form-select-sm">
+                              <option >DIGLIPUR  </option>
+                              <option >MAYABUNDER  </option>
+                              <option >RANGAT  </option>
+                              <option >--ALL--</option>                        
+                           </select>
+                        </li>                        
+                     </ul>
+                  </fieldset>
+
+                  <fieldset class="the-fieldset">
+                     <legend class="the-legend">Select Combinations</legend>      
+                     
+                     <ul class="four-row">
+                        <li>
+                           <label>Search By</label>
+                           <select class="form-select form-select-sm">
+                              <option >DIGLIPUR  </option>
+                              <option >MAYABUNDER  </option>
+                              <option >RANGAT  </option>
+                              <option >--ALL--</option>                        
+                           </select>
+                        </li>
+                        <li>
+                           <label>Financial Year</label>
+                           <select class="form-select form-select-sm">
+                              <option >DIGLIPUR  </option>
+                              <option >MAYABUNDER  </option>
+                              <option >RANGAT  </option>
+                              <option >--ALL--</option>                        
+                           </select>
+                        </li>
+                        <li>
+                           <label>Whose Mobile</label>
+                           <select class="form-select form-select-sm">
+                              <option >DIGLIPUR  </option>
+                              <option >MAYABUNDER  </option>
+                              <option >RANGAT  </option>
+                              <option >--ALL--</option>                        
+                           </select>
+                        </li>
+                        <li>
+                           <label>Mobile No.</label>
+                           <select class="form-select form-select-sm">
+                              <option >DIGLIPUR  </option>
+                              <option >MAYABUNDER  </option>
+                              <option >RANGAT  </option>
+                              <option >--ALL--</option>                        
+                           </select>
+                        </li>
+                        <li>
+                           <label>MCTS ID No.</label>
+                           <select class="form-select form-select-sm">
+                              <option >DIGLIPUR  </option>
+                              <option >MAYABUNDER  </option>
+                              <option >RANGAT  </option>
+                              <option >--ALL--</option>                        
+                           </select>
+                        </li>
+                        <li>
+                           <label>RCH ID No.</label>
+                           <select class="form-select form-select-sm">
+                              <option >DIGLIPUR  </option>
+                              <option >MAYABUNDER  </option>
+                              <option >RANGAT  </option>
+                              <option >--ALL--</option>                        
+                           </select>
+                        </li>
+                        <li>
+                           <label>Name of Wife</label>
+                           <select class="form-select form-select-sm">
+                              <option >DIGLIPUR  </option>
+                              <option >MAYABUNDER  </option>
+                              <option >RANGAT  </option>
+                              <option >--ALL--</option>                        
+                           </select>
+                        </li>
+                        <li>
+                           <label>Name of Husband</label>
+                           <select class="form-select form-select-sm">
+                              <option >DIGLIPUR  </option>
+                              <option >MAYABUNDER  </option>
+                              <option >RANGAT  </option>
+                              <option >--ALL--</option>                        
+                           </select>
+                        </li>
+                        <li>
+                           <label>JSY Beneficiary</label>
+                           <select class="form-select form-select-sm">
+                              <option >DIGLIPUR  </option>
+                              <option >MAYABUNDER  </option>
+                              <option >RANGAT  </option>
+                              <option >--ALL--</option>                        
+                           </select>
+                        </li>
+                        <li>
+                           <label>S.No. of RCH Reg.</label>
+                           <select class="form-select form-select-sm">
+                              <option >DIGLIPUR  </option>
+                              <option >MAYABUNDER  </option>
+                              <option >RANGAT  </option>
+                              <option >--ALL--</option>                        
+                           </select>
+                        </li>
+                        <li>
+                           <label>Filter Wise</label>
+                           <select class="form-select form-select-sm">
+                              <option >DIGLIPUR  </option>
+                              <option >MAYABUNDER  </option>
+                              <option >RANGAT  </option>
+                              <option >--ALL--</option>                        
+                           </select>
+                        </li>                        
+                     </ul>
+                  </fieldset>
+
+                  <div class="w-100 py-2 text-center">
+                     <input type="button" class="btn-custom" value="Eligible Couple">
+                     <input type="button" class="btn-custom" value="Eligible Couple">
+                     <input type="button" class="btn-custom" value="Eligible Couple">
+                     <input type="button" class="btn-custom" value="Eligible Couple">
+                  </div>
+                  <div class="w-100 py-1 text-center border border-danger fw-bold mt-2 mb-2">
+                     <small class="red d-block"> ABHA Number card will be available for Printing after 30 minutes of Linkage / Creation with RCH ID.</small>
+                     <small class="danger d-block">* Only 3000 records will be displayed, if number of record exceeds only count will be shown.</small>
+
+                  </div>
+                  <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Launch demo modal
+                  </button>                 -->
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="col-sm-12 table-border-radius">
+                  <table id="table-radius" class="table table-sm table-bordered table-striped align-middle">
+	<thead>
+
+   
+      <tr >
+         <th>Sr. No.</th>
+         <th><a href="">RCH ID</a></th>
+         <th><a href="" >Beneficiary Name</a></th>
+         <th><a href="" >Husband Name</a></th>
+         <th><a id="" href="" >Address</a></th>
+         <th>ABHA Linkage</th>
+      </tr>
+   </thead>
+		<tbody>
+      <tr>
+			<td >1</td>
+			<td>
+             <input type="hidden" value="1">                  
+            <span id="SingleMainContent_lvSearch_lblRCH_No_0">135000093595</span>
+         </td>
+			<td>
+            <span id="SingleMainContent_lvSearch_lblWife_0">Kamal Gupta</span>                       
+         </td>
+			<td>VINOD SINGH
+         </td>
+			<td>
+            <span>PORT</span>
+         </td>
+			<td>
+            <input type="submit"  value="Link" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Click if ABHA already created" class="d-button small green">
+            <input type="submit" value="Create &amp; Link" data-bs-toggle="modal" data-bs-target="#exampleModal"  title="Click if ABHA is not available" class="d-button small orange">
+         </td>
+		</tr>		
+      <tr>
+			<td>2</td>
+			<td>
+            <input type="hidden" name="ctl00$SingleMainContent$lvSearch$ctrl1$hfCase_no" id="SingleMainContent_lvSearch_hfCase_no_1" value="1">                  
+            <span id="SingleMainContent_lvSearch_lblRCH_No_1">135000093614</span>
+         </td>
+			<td>
+            <span id="SingleMainContent_lvSearch_lblWife_1">samiran chanda</span>  
+         </td>
+			<td>BIGGAN MINJ</td>
+			<td>
+            <span id="SingleMainContent_lvSearch_lblAddress_1">PORT MOUT</span>
+         </td>
+			<td>
+            <input type="submit" name="" value="Link" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Click if ABHA already created" class="d-button small green">
+            <input type="submit"  value="Create &amp; Link" data-bs-toggle="modal" data-bs-target="#exampleModal"  title="Click if ABHA is not available" class="d-button small orange"> 
+         </td>
+		</tr>			
+      <tr >
+			<td>3</td>
+			<td>
+            <input type="hidden"  value="1">                  
+            <span >135000093634</span>
+         </td>
+			<td>
+            <span >Nitish Gugnani</span>                    
+         </td>
+			<td>
+            SHIVANKAR HALDAR
+         </td>
+			<td >
+            <span >DAM PAHAR</span>
+         </td>
+			<td >
+            <input type="submit"  value="Link" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Click if ABHA already created" class="d-button small green">
+            <input type="submit"  value="Create &amp; Link" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Click if ABHA is not available" class="d-button small orange">                     
+         </td>
+		</tr>			
+      <tr id="SingleMainContent_lvSearch_row_3">
+			<td >4</td>
+			<td >
+            <input type="hidden"  value="1"><span>135000093636</span>
+         </td>
+			<td>
+            <span id="SingleMainContent_lvSearch_lblWife_3">Md Shahbazul Hasan</span> 
+         </td>
+			<td>Sowrav Sarkar</td>
+			<td>
+            <span id="SingleMainContent_lvSearch_lblAddress_3">DAM PAHAR</span>
+         </td>
+			<td>
+            <input type="submit"  value="Link"  data-bs-toggle="modal" data-bs-target="#exampleModal"  title="Click if ABHA already created" class="d-button small green">
+         <input type="submit"  value="Create &amp; Link"  data-bs-toggle="modal" data-bs-target="#exampleModal" id="SingleMainContent_lvSearch_btnCreate_3" title="Click if ABHA is not available" class="d-button small orange"></td>
+		</tr>
+		
+        
+		
+      <tr>
+			<td>5</td>
+			<td>
+            <input type="hidden" value="1">                  
+            <span >135000093638</span>
+         </td>
+			<td>
+            <span>Lokesh Kumar Sharma</span>  
+         </td>
+			<td >NIKHIL SASMAL</td>
+			<td >
+            <span id="SingleMainContent_lvSearch_lblAddress_4">DAM PAHAD</span>
+         </td>
+			<td>       
+            <input type="submit"  data-bs-toggle="modal" data-bs-target="#exampleModal" value="Unlink"  disabled="disabled" class="d-button small red">
+            <input type="submit"  data-bs-toggle="modal" data-bs-target="#exampleModal" value="Print"  class="d-button small blue">
+         </td>
+		</tr>
+		
+        
+		
+      <tr>
+			<td>6</td>
+			<td>
+            <input type="hidden"  id="SingleMainContent_lvSearch_hfCase_no_5" value="1">                  
+            <span>135000093738</span>
+         </td>
+			<td >
+            <span >Sarita Bai</span>
+         </td>
+			<td>Shyamnath Bisra</td>
+			<td >
+            <span id="SingleMainContent_lvSearch_lblAddress_5">nimbu bagich</span>
+         </td>
+			<td>
+            <input type="submit"  value="Link"   title="Click if ABHA already created" data-bs-toggle="modal" data-bs-target="#exampleModal" class="d-button small green">
+            <input type="submit"  value="Create &amp; Link" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Click if ABHA is not available" class="d-button small orange">                    
+         </td>
+		</tr>
+		
+        
+		
+ 
+		
+        
+		
+  
+		
+        
+	
+		
+        
+	
+		
+        </tbody></table>
+
+        <nav aria-label="Page navigation example">
+         <ul class="pagination justify-content-center">
+           <li class="page-item disabled">
+             <a class="page-link">Previous</a>
+           </li>
+           <li class="page-item"><a class="page-link" href="#">1</a></li>
+           <li class="page-item"><a class="page-link" href="#">2</a></li>
+           <li class="page-item"><a class="page-link" href="#">3</a></li>
+           <li class="page-item">
+             <a class="page-link" href="#">Next</a>
+           </li>
+         </ul>
+       </nav>
+               </div>
+            </div>
+
+
+
+
+         </div>
+      </main>
+      <section class="footer">
+         <div class="container">
+            <div class="row py-2 d-flex justify-content-center align-items-center">
+               <div class="col-lg-4">
+                  <ul class="footer-links">
+                     <li><a href="">Disclaimer</a></li>
+                     <li><a href="">Related Links</a></li>
+                     <li><a href="">Linking Policy</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-4">
+                  <p class="helpdesk"><strong>HELPDESK :</strong> helpdesk-mcts@lsmgr.nic.in</p>
+               </div>
+               <div class="col-lg-4">
+                  <ul class="footer-img">
+                     <li><img src="assets/images/national-portal-india.jpg" class="img-fluid"></li>
+                     <li><img src="assets/images/nic-logo.png" class="img-fluid"></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <article class="copyright-section">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-12">
+                     <p class="copyright">Site is designed and hosted by National Informatics Centre (NIC). Information is provided and updated by MoHFW</p>
+                  </div>
+               </div>
+            </div>
+         </article>
+      </section>
+      <!-- popup section -->
+      <!-- Modal -->
+      <div class="modal fade abha-creation" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content position-relative">
+               <section id="loader-section">
+                  <div class="loader-section">
+                     <span class="loader-custom"></span>
+                  </div>
+               </section>
+               <div class="modal-header">
+                  <h5 class="modal-title text-white" id="exampleModalLabel ">ABHA Number creation and linkage with RCH ID</h5>
+                  <button type="button" class="btn-close text-white" data-bs-dismiss="modal" style="fill:#fff!important;" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <!-- <h2 class="background double"><span>ABHA Number creation and linkage with RCH ID</span></h2> -->
+                  <div class="abha-content mt-7 mb-2">
+                     <ul class="userDetails">
+                        <li>Name : </li>
+                        <li>Kamal Gupta</li>
+                        <li>RCH ID : </li>
+                        <li>135000093595</li>
+                     </ul>
+                  </div>
+                  <div class="w-100 term-condition bg-white">
+                     <div class="checkbox-section">
+                        <label for="c1">
+                        <input type="checkbox" id="c1" >
+                        <span class="label-text"></span>
+                        </label>
+                     </div>
+                     <div class="term-content">
+                        I hereby confirm that I have explained below mentioned consent process to the individual for the creation of ABHA and linking with RCH programme/application.
+                     </div>
+                  </div>
+                  <section class="abha-content">
+                     <h6>Consent for creation of ABHA :</h6>
+                     <p class="font-12 more">I, hereby declare that I am voluntarily sharing my Aadhaar Number / Virtual ID and demographic information issued by UIDAI, with National Health Authority (NHA) for the sole purpose of creation of an Ayushman Bharat Health Account (ABHA (number)). I understand that my ABHA (number) can be used and shared for purposes as may be notified by Ayushman Bharat Digital Mission (ABDM) from time to time including provision of healthcare services. Further, I am aware that my personal identifiable information (Name, Address, Age, Date of Birth, Gender and Photograph) may be made available to the entities working in the National Digital Health Ecosystem (NDHE) which inter alia may includes stakeholders and entities such as healthcare professionals (e.g. doctors), facilities (e.g. hospitals, laboratories) and data fiduciaries (e.g. health programmes), which are registered with or linked to the Ayushman Bharat Digital Mission (ABDM), and various processes there under. I authorize NHA to use my Aadhaar number / Virtual ID for performing Aadhaar based authentication with UIDAI as per the provisions of the Aadhaar (Targeted Delivery of Financial and other Subsidies, Benefits and Services) Act, 2016 for the aforesaid purpose. I understand that UIDAI will share my e-KYC details, or response of “Yes” with NHA upon successful authentication.
+                        I have been duly informed about the option of using other IDs apart from Aadhaar; however, I consciously choose to use Aadhaar number / Virtual ID for the purpose of availing benefits across the NDHE. I am aware that my personal identifiable information excluding Aadhaar number / Virtual ID can be used and shared for purposes as mentioned above. I reserve the right to revoke the given consent at any point of time as per provisions of Aadhar Act and Regulations.
+                     </p>
+                  </section>
+                  <div class="clearfix"></div>
+                  <section class="addaar-box">
+                     <div class="subscribe-box text-center">
+                        <h6>Enter Aadhaar Number</h6>
+                        <form class="subscribe">
+                           <input type="text" placeholder="Enter Aadhaar Number" autocomplete="off" maxlength="16"  />
+                           <button type="button" id="getotp" class="btn-rounded my-2"> <span>Get OTP</span></button>
+                           <button type="button" id="otp" class="btn-rounded my-2"> <span>Resend OTP</span></button>
+                        </form>
+                     </div>
+                  </section>
+                  <div class="clearfix"></div>
+                  <article class="otp-box subscribe-box text-center w-100 float-left">
+                     <div class="height-100 d-flex justify-content-center align-items-center">
+                        <div class="position-relative">
+                           <div class="p-1 text-center">
+                              <h6>Please enter the one time password  to verify your account</h6>
+                              <div> <span>A code has been sent to</span> <small>*******9897</small> </div>
+                              <div id="otp" class="inputs d-flex flex-row justify-content-center mt-2"> 
+                                 <input class="m-1 text-center form-control rounded" type="text" id="first" maxlength="1" /> 
+                                 <input class="m-1 text-center form-control rounded" type="text" id="second" maxlength="1" /> 
+                                 <input class="m-1 text-center form-control rounded" type="text" id="third" maxlength="1" /> 
+                                 <input class="m-1 text-center form-control rounded" type="text" id="fourth" maxlength="1" /> 
+                                 <input class="m-1 text-center form-control rounded" type="text" id="fifth" maxlength="1" /> 
+                                 <input class="m-1 text-center form-control rounded" type="text" id="sixth" maxlength="1" /> 
+                              </div>
+                              <div class=""> <button id="validate" class="btn-rounded my-2">Validate</button> </div>
+                           </div>
+                        </div>
+                     </div>
+                  </article>
+                  <div class="clearfix"></div>
+                  <!-- <section class="abha-content">
+                     <table class="table table-sm table-bordered text-center"  id="mytable">
+                        <tbody>
+                           <tr>
+                              <th>Details</th>
+                              <th>RCH Data</th>
+                              <th>ABHA Number Data</th>
+                              <th>Score</th>
+                           </tr>
+                           <tr id="SingleMainContent_row">
+                              <th>ID</th>
+                              <td >
+                                 <span id="SingleMainContent_lblRCHID">135000093634</span>
+                              </td>
+                              <td >
+                                 <span id="SingleMainContent_lblNDHMID">27-2626-5012-3636</span>
+                              </td>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>Name</th>
+                              <td >
+                                 <span id="SingleMainContent_lblRCHName">Nitish Gugnani</span>
+                              </td>
+                              <td >
+                                 <span id="SingleMainContent_lblNDHMName">Md Shahbazul Hasan</span>
+                              </td>
+                              <td >
+                                 <span id="SingleMainContent_lblNameScore" style="color:Red;">0% (Not matched)</span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <th>Gender</th>
+                              <td>
+                                 <span id="SingleMainContent_lblRCH_Gender">M</span>
+                              </td>
+                              <td >
+                                 <span id="SingleMainContent_lbl_NDHM_gender">M</span>
+                              </td>
+                              <td >
+                                 <span id="SingleMainContent_lblScoregender" style="color:Green;">Matched</span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <th>Date of Birth</th>
+                              <td >
+                                 <span id="SingleMainContent_lblRCHBirthDate">09/02/1991</span>
+                              </td>
+                              <td >
+                                 <span id="SingleMainContent_lblNDHMbirthDate">08/01/1979</span>
+                              </td>
+                              <td >
+                                 <span id="SingleMainContent_lbl_ScoreDateBirth" class="red">Not matched</span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <th>Address</th>
+                              <td >
+                                 <span id="SingleMainContent_lblRCH_Add">DAM PAHAR</span>
+                              </td>
+                              <td >
+                                 <span id="SingleMainContent_lblNDHM_Add">C/O MOHD Quamrul Hasan 76 A Ground Floor LIG DDA Flats Pocket 12 Near Dutta Shop Jasola Vihar Okhla</span>
+                              </td>
+                              <td >
+                                 <span id="SingleMainContent_lblAdd_Score"></span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <th>Result</th>
+                              <td colspan="3">
+                                 <span id="SingleMainContent_lblResult" class="button small green" >Not Matched</span>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>                                         
+                  </section> -->
+
+                  <section class="abha-content comparison-table">
+                    <table class="table table-sm table-bordered align-middle table-striped"  id="mytable">
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>ID Number</th>
+                          <th>Name</th>
+                          <th>Gender</th>
+                          <th class="text-nowrap">Date of Birth</th>
+                          <th>Address</th>
+                          <th>Result</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>RCH Data</td>
+                          <td>135000093634</td>
+                          <td>Nitish Gugnani</td>
+                          <td>M</td>
+                          <td>09/02/1991</td>
+                          <td>DAM PAHAR</td>
+                          <td rowspan="4" class="text-center">Not Matched</td>
+                        </tr>
+                        <tr>
+                          <td>ABHA Number Data</td>
+                          <td>27-2626-5012-3636</td>
+                          <td>Md Shahbazul Hasan</td>
+                          <td>M</td>
+                          <td>08/01/1979</td>
+                          <td>C/O MOHD Quamrul Hasan 76 A Ground Floor LIG DDA Flats Pocket 12 Near Dutta Shop Jasola Vihar Okhla</td>
+                        </tr>
+                        <tr>
+                          <td>Score</td>
+                          <td></td>
+                          <td>0% (Not matched)</td>
+                          <td>Matched</td>
+                          <td>Not matched</td>
+                          <td></td>
+                        </tr>                         
+                      </tbody>
+                   </table>
+                   <div class="w-100 text-center pb-2">
+                    <button class="btn-rounded">Back</button>
+                    <button class="btn-rounded">Submit</button>
+                 </div> 
+                   <div class="border border-danger w-100 text-center text-danger py-1">
+                    RCH ID and ABHA data are not matched, hence can not be linked.
+                 </div>
+                  </section>
+               </div>
+               <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                  </div> -->
+            </div>
+         </div>
+      </div>
+      <script src="assets/js/jquery.min.js"></script>   
+      <script src="assets/js/bootstrap.bundle.min.js"></script>   
+      <script>
+         $(document).ready(function() {
+         // Configure/customize these variables.
+         var showChar = 100;  // How many characters are shown by default
+         var ellipsestext = "...";
+         var moretext = "Show more >";
+         var lesstext = "Show less"; 
+         $('.more').each(function() {
+            var content = $(this).html();         
+            if(content.length > showChar) {         
+                var c = content.substr(0, showChar);
+                var h = content.substr(showChar, content.length - showChar);         
+                var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';         
+                $(this).html(html);
+            }         
+         });
+         
+         $(".morelink").click(function(){
+            if($(this).hasClass("less")) {
+                $(this).removeClass("less");
+                $(this).html(moretext);
+            } else {
+                $(this).addClass("less");
+                $(this).html(lesstext);
+            }
+            $(this).parent().prev().toggle();
+            $(this).prev().toggle();
+            return false;
+         });
+         });        
+         
+         document.addEventListener("DOMContentLoaded", function(event) {         
+         function OTPInput() {
+         const inputs = document.querySelectorAll('#otp > *[id]');
+         for (let i = 0; i < inputs.length; i++) { inputs[i].addEventListener('keydown', function(event) { if (event.key==="Backspace" ) { inputs[i].value='' ; if (i !==0) inputs[i - 1].focus(); } else { if (i===inputs.length - 1 && inputs[i].value !=='' ) { return true; } else if (event.keyCode> 47 && event.keyCode < 58) { inputs[i].value=event.key; if (i !==inputs.length - 1) inputs[i + 1].focus(); event.preventDefault(); } else if (event.keyCode> 64 && event.keyCode < 91) { inputs[i].value=String.fromCharCode(event.keyCode); if (i !==inputs.length - 1) inputs[i + 1].focus(); event.preventDefault(); } } }); } } OTPInput(); });
+
+
+
+         $(".addaar-box").hide();
+            $("#c1").click(function() {
+               if($(this).is(":checked")) {
+                  $(".addaar-box").show(300);
+               } else {
+                  $(".addaar-box").hide(200);
+               }
+         });
+         
+         $("#otp").hide();
+         $(".otp-box").hide();
+         $("#getotp").click(function(){
+
+               $("#loader-section").show();
+               setTimeout(function(){
+                  $("#loader-section").hide();
+                  $(".otp-box").show();
+               }, 3000);
+         
+            $("#otp").show();
+            
+         });
+         $(".comparison-table").hide();
+
+         $("#validate").click(function(){
+            $(".comparison-table").show();
+            $(".addaar-box").hide();
+            $(".otp-box").hide();
+            
+         });
+         
+         
+      </script>
+   </body>
+</html>
