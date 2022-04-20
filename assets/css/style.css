@@ -2250,7 +2250,7 @@ ul.userDetails{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 13px;
+    font-size: 14px;
 }
 ul.userDetails li{    
     display: inline-block;
@@ -2667,7 +2667,7 @@ input[type=number]::-webkit-outer-spin-button {
     background: #01004C;
     background: #166788;
     background: #435ba1;
-    padding: 0.5rem 1rem;
+   /*  padding: 0.5rem 1rem; */
 }
 .text-light-blue{
     color:#2caee2

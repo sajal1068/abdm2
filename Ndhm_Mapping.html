@@ -466,7 +466,7 @@
                </section>
                <div class="modal-header">
                   <h5 class="modal-title text-white" id="exampleModalLabel "><span class="text-gold fw-bold">ABHA Number</span> creation and linkage with <span class="text-gold fw-bold">RCH ID</span></h5>
-                  <button type="button" class="btn-close text-white" data-bs-dismiss="modal" style="fill:#fff!important;" aria-label="Close"></button>
+                  <button type="button" class="btn btn-small btn-warning" data-bs-dismiss="modal"  aria-label="Close"> Back</button>
                </div>
                <div class="modal-body">
                   <!-- <h2 class="background double"><span>ABHA Number creation and linkage with RCH ID</span></h2> -->
@@ -528,7 +528,7 @@
                                  <li><h6>Enter the OTP</h6></li>
                                  <li>
                                     <div> <span>A code has been sent to</span> <small>*******9897</small> </div>
-                              <div id="otp" class="inputs d-flex flex-row justify-content-center mt-2"> 
+                              <div id="otp" class="inputs d-flex flex-row justify-content-center"> 
                                  <input class="m-1 text-center form-control rounded" type="text" id="first" maxlength="1" /> 
                                  <input class="m-1 text-center form-control rounded" type="text" id="second" maxlength="1" /> 
                                  <input class="m-1 text-center form-control rounded" type="text" id="third" maxlength="1" /> 
@@ -555,7 +555,7 @@
                      <div class="table-responsive">
 
                      
-                    <table class="table table-sm table-bordered align-middle"  id="mytable">
+                     <table class="table table-sm table-bordered align-middle mt-1"  id="mytable">
                       <thead>
                         <tr>
                           <th class="text-nowrap">Data Comparison</th>
@@ -573,35 +573,32 @@
                           <td>Nitish Gugnani</td>
                           <td>M</td>
                           <td>09/02/1991</td>
-                          <td>DAM PAHAR</td>
-                          
+                          <td>DAM PAHAR</td>                          
                         </tr>
                         <tr>
                           <th>ABHA Number Data</th>
-                          <td>27-2626-5012-3636</td>
+                          <td class="text-nowrap">27-2626-5012-3636</td>
                           <td>Md Shahbazul Hasan</td>
                           <td>M</td>
                           <td>08/01/1979</td>
                           <td>C/O MOHD Quamrul Hasan 76 A Ground Floor LIG DDA Flats Pocket 12 Near Dutta Shop Jasola Vihar Okhla</td>
                         </tr>
                         <tr class="align-middle">
-                          <th>Score</th>
-                          <td class="text-center">
-                             <img src="assets/images/close-icon.png"><span class="d-block mt-1"></span>
-                          </td>
+                          <th class="text-center">Score</th>
+                          <td></td>
                           <td class="text-center"><img src="assets/images/close-icon.png"><span class="">(0%)</span></td>
                           <td class="text-center"><img src="assets/images/right-icon.png"><span class="d-block"></span></td>
                           <td class="text-center"><img src="assets/images/close-icon.png"><span class="d-block mt-1"></span></td>
-                          <td class="text-center"><img src="assets/images/right-icon.png"><span class="d-block mt-1"></span></td>
+                          <td></td>
                         </tr> 
                         <tr class="actionclass">
-                           <td>Result</td>
+                           <td class="text-center">Result</td>
                            <td colspan="5" class="text-center">Matched</td>
                         </tr>                        
                       </tbody>
                    </table>
                   </div>
-                   <div class="w-100 text-center">
+                   <div class="w-100 text-center top-10">
                     <button class="btn-rounded">Back</button>
                     <button class="btn-rounded">Submit</button>
                  </div> 
@@ -623,92 +620,67 @@
       <script src="assets/js/jquery.min.js"></script>   
       <script src="assets/js/bootstrap.bundle.min.js"></script>   
       <script>
-      $(document).ready(function() {
-         
-      });        
-         
-         document.addEventListener("DOMContentLoaded", function(event) {         
-         function OTPInput() {
-         const inputs = document.querySelectorAll('#otp > *[id]');
-         for (let i = 0; i < inputs.length; i++) { inputs[i].addEventListener('keydown', function(event) { if (event.key==="Backspace" ) { inputs[i].value='' ; if (i !==0) inputs[i - 1].focus(); } else { if (i===inputs.length - 1 && inputs[i].value !=='' ) { return true; } else if (event.keyCode> 47 && event.keyCode < 58) { inputs[i].value=event.key; if (i !==inputs.length - 1) inputs[i + 1].focus(); event.preventDefault(); } else if (event.keyCode> 64 && event.keyCode < 91) { inputs[i].value=String.fromCharCode(event.keyCode); if (i !==inputs.length - 1) inputs[i + 1].focus(); event.preventDefault(); } } }); } } OTPInput(); });
-
-         $( document ).ready(function() {
-
-         $(".addaar-box").hide();
-            $("#c1").click(function() {
-               if($(this).is(":checked")) {
-                  $(".addaar-box").show(300);
-               } else {
-                  $(".addaar-box").hide(200);
-               }
-         });
-         
-         $("#otp").hide();
-         $(".otp-box").hide();
-         $("#getotp").click(function(){
-
-               $("#loader-section").show();
-               setTimeout(function(){
-                  $("#loader-section").hide();
-                  $(".otp-box").show();
-               }, 3000);
-         
-            $("#otp").show();
+         $(document).ready(function() {
             
-         });
-            $(".comparison-table").hide();
-
-            $("#validate").click(function(){
-               $(".comparison-table").show();
-               $(".addaar-box").hide();
-               $(".otp-box").hide();
-               // $(".newlink").hide();               
-               // $(".creatlink").hide(); 
-               $(function() {
-    var target = $('#mydiv');
-    if (target.length) {
-        $('html,body').animate({
-            scrollTop: target.offset().top
-        }, 1000);
-        return false;
-    }
-});          
-            });
-
-
-           
-
-         
-
-            $('.d-button').click(function() {
-               let theValue = $(this).val();
-               if(theValue == 'Link'){
-                  $(".newlink").show(); 
-                  $(".creatlink").hide();
-                  
-               }else{
-                  $(".creatlink").show(); 
-                  $(".newlink").hide();
-               }
-            });
-
-
-            $("tr.actionclass td").filter(function() {  
-                  //alert($(this).text());
-                  if($(this).text() == "Not Matched"){
-                     $(this).addClass('td-error');
-                     $(this).removeClass('td-success');                  
-                  }
-                  if($(this).text() == "Matched"){
-                     $(this).addClass('td-success');
-                     $(this).removeClass('td-error');                     
-                  }
+         });        
             
-            });
-
-           
-         });
+            document.addEventListener("DOMContentLoaded", function(event) {         
+            function OTPInput() {
+            const inputs = document.querySelectorAll('#otp > *[id]');
+            for (let i = 0; i < inputs.length; i++) { inputs[i].addEventListener('keydown', function(event) { if (event.key==="Backspace" ) { inputs[i].value='' ; if (i !==0) inputs[i - 1].focus(); } else { if (i===inputs.length - 1 && inputs[i].value !=='' ) { return true; } else if (event.keyCode> 47 && event.keyCode < 58) { inputs[i].value=event.key; if (i !==inputs.length - 1) inputs[i + 1].focus(); event.preventDefault(); } else if (event.keyCode> 64 && event.keyCode < 91) { inputs[i].value=String.fromCharCode(event.keyCode); if (i !==inputs.length - 1) inputs[i + 1].focus(); event.preventDefault(); } } }); } } OTPInput(); });
          
+            $( document ).ready(function() {
+         
+            $(".addaar-box").hide();
+               $("#c1").click(function() {
+                  if($(this).is(":checked")) {
+                     $(".addaar-box").show(300);
+                  } else {
+                     $(".addaar-box").hide(200);
+                  }
+            });            
+            $("#otp").hide();
+            $(".otp-box").hide();
+            $("#getotp").click(function(){         
+                  $("#loader-section").show();
+                  setTimeout(function(){
+                     $("#loader-section").hide();
+                     $(".otp-box").show();
+                  }, 3000);            
+               $("#otp").show();               
+            });
+               $(".comparison-table").hide();         
+               $("#validate").click(function(){
+                  $(".comparison-table").show();
+                  $(".addaar-box").hide();
+                  $(".otp-box").hide();
+                  // $(".newlink").hide();               
+                  // $(".creatlink").hide();                  
+               });         
+               $('.d-button').click(function() {
+                  let theValue = $(this).val();
+                  if(theValue == 'Link'){
+                     $(".newlink").show(); 
+                     $(".creatlink").hide();                     
+                  }else{
+                     $(".creatlink").show(); 
+                     $(".newlink").hide();
+                  }
+               });     
+               $("tr.actionclass td").filter(function() {  
+                     //alert($(this).text());
+                     if($(this).text() == "Not Matched"){
+                        $(this).addClass('td-error');
+                        $(this).removeClass('td-success');  
+                        $(".btn-sec").hide();                   
+                     }
+                     if($(this).text() == "Matched"){
+                        $(this).addClass('td-success');
+                        $(this).removeClass('td-error'); 
+                        $("#mydiv").hide();                    
+                     }               
+               });  
+            });            
       </script>
    </body>
 </html>
